@@ -52,7 +52,7 @@ let script = await readFile(
   join(dist, scriptMatch[1].replace(/^\//, "")),
   "utf8",
 );
-// The catalogue's default category image is a template literal, rather than a
+// The catalogue's default product image is a template literal, rather than a
 // static asset URL; preserve that expression while resolving it from the map.
 script = script.replace(
   /`\/images\/\$\{([^}]+)\}\.webp`/g,
@@ -106,7 +106,7 @@ await mkdir(output, { recursive: true });
 const htmlPath = join(output, "2five3-preview.html");
 await writeFile(htmlPath, html);
 
-const instructions = `2FIVE3 COFFEE & MART — APERÇU DE VALIDATION\n\nAucun déploiement n'a été effectué.\n\nOPTION 1 — OUVERTURE DIRECTE\nOuvrez 2five3-preview.html dans un navigateur récent (Chrome, Edge, Safari ou Firefox).\nLe fichier contient les images, les polices et la vidéo : aucune installation ni connexion n'est nécessaire.\nLes visuels sont provisoires et illustratifs.\n\nOPTION 2 — SERVEUR LOCAL\nLe dossier site contient la version de production classique.\nAvec Python installé, ouvrez un terminal dans ce dossier puis exécutez :\n\n  python3 -m http.server 5173 --bind 0.0.0.0\n\nSous Windows, remplacez python3 par python si nécessaire.\nOuvrez ensuite http://localhost:5173 sur cet ordinateur.\nPour vérifier sur un téléphone connecté au même Wi-Fi, remplacez localhost par l'adresse IP locale de l'ordinateur (ex. http://192.168.1.20:5173).\nAutorisez le réseau local dans le pare-feu si nécessaire.\n\nLa réduction des animations activée dans le système remplace la vidéo pilotée au défilement par une image fixe.\n`;
+const instructions = `2FIVE3 COFFEE & MART — APERÇU DE VALIDATION\n\nAucun déploiement n'a été effectué.\n\nOPTION 1 — OUVERTURE DIRECTE\nOuvrez 2five3-preview.html dans un navigateur récent (Chrome, Edge, Safari ou Firefox).\nLe fichier contient les images, les polices et la vidéo : aucune installation ni connexion n'est nécessaire.\n\nOPTION 2 — SERVEUR LOCAL\nLe dossier site contient la version de production classique.\nAvec Python installé, ouvrez un terminal dans ce dossier puis exécutez :\n\n  python3 -m http.server 5173 --bind 0.0.0.0\n\nSous Windows, remplacez python3 par python si nécessaire.\nOuvrez ensuite http://localhost:5173 sur cet ordinateur.\nPour vérifier sur un téléphone connecté au même Wi-Fi, remplacez localhost par l'adresse IP locale de l'ordinateur (ex. http://192.168.1.20:5173).\nAutorisez le réseau local dans le pare-feu si nécessaire.\n\nLa réduction des animations activée dans le système remplace la vidéo pilotée au défilement par une image fixe.\n`;
 // A small ZIP writer keeps review generation portable: no external executable,
 // package dependency or child process is needed. Files are UTF-8 named, use
 // standard CRC-32/DEFLATE and stay within the classic ZIP size limits.

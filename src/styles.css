@@ -428,14 +428,6 @@ input {
   padding-left: 15px;
   margin-left: 3px;
 }
-.hero-photo-note {
-  position: absolute;
-  bottom: 12px;
-  right: 5%;
-  font-size: 6px;
-  letter-spacing: 1.2px;
-  color: #4f5940;
-}
 .category-ribbon {
   background: #e5e9d5;
   border-block: 1px solid #d9dfc3;
@@ -650,19 +642,6 @@ input {
 .product-image-button:hover > img {
   transform: scale(1.045);
 }
-.image-caption {
-  position: absolute;
-  bottom: 11px;
-  left: 12px;
-  background: rgba(250, 249, 245, 0.85);
-  backdrop-filter: blur(4px);
-  padding: 4px 6px;
-  font-size: 7px;
-  font-weight: 400;
-  letter-spacing: 0.2px;
-  color: #626752;
-  border-radius: 2px;
-}
 .product-image-arrow {
   position: absolute;
   right: 12px;
@@ -733,9 +712,6 @@ input {
 .list-view .product-info {
   padding: 0;
 }
-.list-view .image-caption {
-  display: none;
-}
 .list-view .product-image-arrow {
   width: 25px;
   height: 25px;
@@ -769,17 +745,6 @@ input {
 .load-more p {
   font-size: 9px;
   color: #909180;
-}
-.catalogue-note {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  gap: 7px;
-  font-size: 8px;
-  line-height: 1.7;
-  color: #959687;
-  margin-top: 32px;
-  text-align: center;
 }
 .empty-state {
   padding: 60px 20px;
@@ -845,14 +810,6 @@ input {
   line-height: 1;
   margin-top: 16px;
   text-shadow: none;
-}
-.story-visual-note {
-  position: absolute;
-  bottom: 12px;
-  left: 15px;
-  font-size: 6px;
-  letter-spacing: 1px;
-  color: #f8f6e9;
 }
 .story-content > .eyebrow {
   color: #81856e;
@@ -1084,12 +1041,6 @@ input {
   font-weight: 400;
   color: #8c9559;
 }
-.illustration-note {
-  font-size: 9px;
-  line-height: 1.75;
-  color: #858875;
-  margin-top: 22px;
-}
 .dialog-details .text-button {
   font-size: 9px;
 }
@@ -1282,10 +1233,6 @@ input {
   .hero-product-price small {
     font-size: 8px;
   }
-  .hero-photo-note {
-    bottom: 9px;
-    font-size: 5px;
-  }
   .hero-footnote {
     font-size: 6px;
     letter-spacing: 1px;
@@ -1363,12 +1310,6 @@ input {
   }
   .product-price span {
     font-size: 8px;
-  }
-  .image-caption {
-    font-size: 6px;
-    bottom: 9px;
-    left: 9px;
-    padding: 3px 5px;
   }
   .product-image-arrow {
     width: 26px;
@@ -1603,12 +1544,6 @@ input {
   .hero-product-price small {
     font-size: 8px;
   }
-  .hero-photo-note {
-    z-index: 3;
-    right: 6%;
-    bottom: 11px;
-    font-size: 5px;
-  }
   .category-ribbon > div {
     height: 45px;
     min-width: 690px;
@@ -1733,11 +1668,6 @@ input {
   .product-price span {
     font-size: 8px;
   }
-  .image-caption {
-    font-size: 5px;
-    bottom: 9px;
-    left: 7px;
-  }
   .product-image-arrow {
     width: 24px;
     height: 24px;
@@ -1758,13 +1688,6 @@ input {
   }
   .load-more p {
     font-size: 8px;
-  }
-  .catalogue-note {
-    font-size: 7px;
-    line-height: 1.8;
-    margin-top: 26px;
-    max-width: 290px;
-    margin-inline: auto;
   }
   .brand-story {
     grid-template-columns: 1fr;
@@ -1958,10 +1881,6 @@ input {
   }
   .dialog-brand {
     font-size: 20px;
-  }
-  .illustration-note {
-    font-size: 8px;
-    margin-top: 15px;
   }
   .dialog-details .text-button {
     margin-top: 20px;

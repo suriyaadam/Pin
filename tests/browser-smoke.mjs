@@ -129,6 +129,11 @@ try {
       await page.getByRole("dialog").getByRole("heading").textContent(),
       "Iced Matcha Latte",
     );
+    assert.doesNotMatch(
+      await page.getByRole("dialog").innerText(),
+      /illustrati(?:f|ve|on)/i,
+      "product details contain no image disclaimers",
+    );
   };
   const assertFocusReturned = async () => {
     await page.getByRole("dialog").waitFor({ state: "detached" });
@@ -177,6 +182,28 @@ try {
     [],
   );
   console.log("PASS every rendered product and editorial image loads");
+  assert.equal(
+    await cards
+      .locator("img")
+      .evaluateAll((images) => new Set(images.map((image) => image.src)).size),
+    27,
+    "every product uses a distinct image",
+  );
+  assert.doesNotMatch(
+    await page.locator("body").innerText(),
+    /illustrati(?:f|ve|on)/i,
+  );
+  assert.doesNotMatch(
+    (
+      await page
+        .locator("img")
+        .evaluateAll((images) => images.map((image) => image.alt))
+    ).join(" "),
+    /illustrati(?:f|ve|on)/i,
+  );
+  console.log(
+    "PASS 27 distinct product images and no image disclaimers in page, details or alternative text",
+  );
 
   for (const width of [320, 390, 768, 1440]) {
     await page.setViewportSize({ width, height: 900 });

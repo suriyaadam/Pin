@@ -73,18 +73,16 @@ test("all 27 drinks have a unique usable identifier and a declared category", ()
   }
 });
 
-test("every drink references a nonempty local image and labels provisional imagery", async () => {
+test("all 27 drinks have distinct product photographs and useful alternative text", async () => {
+  assert.equal(new Set(products.map(({ image }) => image)).size, 27);
   for (const product of products) {
     assert.match(product.image, /^\/images\/.+\.(?:webp|png|jpe?g|avif)$/i);
     const imageFile = new URL(`../public${product.image}`, import.meta.url);
     const imageStat = await stat(imageFile);
     assert.ok(imageStat.isFile(), `${product.name}: image is a file`);
     assert.ok(imageStat.size > 0, `${product.name}: image is not empty`);
-    assert.equal(typeof product.imageIsIllustrative, "boolean");
     assert.ok(product.imageAlt.trim().length > 0);
-    if (product.imageIsIllustrative) {
-      assert.match(product.imageAlt, /illustratif/);
-      assert.ok(product.imageAlt.includes(product.name));
-    }
+    assert.ok(product.imageAlt.includes(product.name));
+    assert.match(product.imageAlt, /gobelet transparent 2FIVE3/);
   }
 });

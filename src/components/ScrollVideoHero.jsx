@@ -327,11 +327,7 @@ export default function ScrollVideoHero({ product, onOpenProduct, Icon }) {
             </span>
           </button>
           <div className="scroll-hero__meta">
-            <span>
-              {brand.heroImageIsIllustrative
-                ? "VISUEL D’AMBIANCE ILLUSTRATIF"
-                : "2FIVE3 COFFEE & MART"}
-            </span>
+            <span>2FIVE3 COFFEE & MART</span>
             {motionAllowed && !failed && (
               <button
                 className="scroll-hero__motion-toggle"

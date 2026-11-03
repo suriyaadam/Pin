@@ -80,18 +80,16 @@ Toutes les données produit sont dans **`src/data/catalog.js`**, séparées de l
 - `category` : `matcha`, `mojitos`, `coffee` ou `frappuccino`.
 - `image` : chemin du fichier depuis `public/`.
 - `imageAlt` : texte alternatif de l’image.
-- `imageIsIllustrative` : `true` pour un visuel provisoire, `false` pour une photographie officielle.
 
 Les tests vérifient les noms et prix de la carte initiale. En cas de modification volontaire de la carte, mettre aussi à jour les valeurs attendues dans `tests/catalog.test.js`.
 
 ## Remplacer les ressources de marque
 
-**Les images livrées sont générées et illustratives. Elles ne sont pas des photographies officielles.** Certains visuels représentent une catégorie et sont partagés entre plusieurs produits. Aucun descriptif de recette n’est déduit des images.
+Les visuels sont créés pour le catalogue, avec une image distincte pour chaque boisson. Les pots transparents portent le marquage 2FIVE3 Coffee & Mart. Les couleurs et les couches différencient les fruits, le matcha, le café et les boissons frappées. Aucun descriptif de recette n’est déduit des images.
 
 1. Placer les photographies définitives dans `public/images/` (WebP recommandé).
 2. Mettre à jour les chemins et textes alternatifs dans `src/data/catalog.js`. Affecter une photographie distincte à chaque produit si disponible.
-3. Passer `imageIsIllustrative` à `false` pour retirer la mention provisoire du produit concerné.
-4. Configurer le logo, la grande image d’accueil et l’image de la section « L’esprit 2FIVE3 » dans **`src/data/brand.js`**. Le logo typographique s’affiche tant que `logo` vaut `null`. Pour les photos officielles d’ambiance, ajuster les deux indicateurs `heroImageIsIllustrative` et `storyImageIsIllustrative`.
+3. Configurer le logo, la vidéo d’accueil, ses images de couverture et l’image de la section « L’esprit 2FIVE3 » dans **`src/data/brand.js`**. Le logo typographique s’affiche tant que `logo` vaut `null`.
 
 Les couleurs et les règles responsive sont dans `src/styles.css`. Les polices DM Sans et DM Serif Display sont hébergées dans `public/fonts/`, avec leurs licences OFL.
 
@@ -101,7 +99,7 @@ Les couleurs et les règles responsive sont dans `src/styles.css`. Les polices D
 - Recherche par nom, indépendante des majuscules et des accents.
 - Affichage en grille ou en liste.
 - Dépliage de la carte complète.
-- Fiche produit avec prix et nature du visuel, fermeture au clavier ou par clic à l’extérieur.
+- Fiche produit avec prix, fermeture au clavier ou par clic à l’extérieur.
 - Menu mobile, navigation au clavier, gestion du focus et respect de la préférence de mouvement réduit.
 
 ## Fichiers principaux

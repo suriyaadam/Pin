@@ -11,11 +11,7 @@ export const brand = {
     fallbackImage: "/images/hero-video-fallback.webp",
     frameRate: 24,
   },
-  heroImage: "/images/hero.webp",
-  heroImageAlt:
-    "Composition illustrative autour d’un matcha glacé, sur fond crème.",
-  heroImageIsIllustrative: true,
   storyImage: "/images/coffee.webp",
-  storyImageAlt: "Composition illustrative autour du café, non officielle.",
-  storyImageIsIllustrative: true,
+  storyImageAlt:
+    "Latte aux nuances de café et de lait dans un gobelet transparent 2FIVE3 Coffee & Mart.",
 };

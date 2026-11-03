@@ -123,9 +123,6 @@ function ProductCard({ product, onOpen }) {
           width="600"
           height="700"
         />
-        {product.imageIsIllustrative && (
-          <span className="image-caption">Visuel illustratif</span>
-        )}
         <span className="product-image-arrow">
           <Icon name="diagonal" size={20} />
         </span>
@@ -179,9 +176,6 @@ function ProductModal({ product, onClose }) {
         </button>
         <div className="dialog-image">
           <img src={product.image} alt={product.imageAlt} />
-          {product.imageIsIllustrative && (
-            <span className="image-caption">Visuel illustratif</span>
-          )}
         </div>
         <div className="dialog-details">
           <span className="eyebrow">
@@ -195,13 +189,6 @@ function ProductModal({ product, onClose }) {
             <br />
             <em>signée 2FIVE3.</em>
           </p>
-          {product.imageIsIllustrative && (
-            <p className="illustration-note">
-              Ce visuel illustre la catégorie{" "}
-              {categoryName(product.category).toLowerCase()}. Il ne s’agit pas
-              de la photographie officielle de cette boisson.
-            </p>
-          )}
           <button className="text-button" onClick={onClose}>
             Retour à la carte <Icon name="arrow" size={17} />
           </button>
@@ -497,13 +484,6 @@ export default function App() {
               <p>Encore de belles pauses à découvrir.</p>
             </div>
           )}
-          {products.some((product) => product.imageIsIllustrative) && (
-            <p className="catalogue-note">
-              <span aria-hidden="true">○</span> Les visuels signalés sont des
-              illustrations de nos univers, en attendant les photographies
-              officielles des boissons.
-            </p>
-          )}
         </section>
 
         <section
@@ -523,11 +503,6 @@ export default function App() {
               <em>coffee break.</em>
               <span>THE 2FIVE3 WAY</span>
             </div>
-            {brand.storyImageIsIllustrative && (
-              <span className="story-visual-note">
-                VISUEL D’AMBIANCE ILLUSTRATIF
-              </span>
-            )}
           </div>
           <div className="story-content">
             <span className="eyebrow">L’ESPRIT 2FIVE3</span>
