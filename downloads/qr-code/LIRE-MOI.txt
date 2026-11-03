@@ -1,7 +1,7 @@
 2FIVE3 COFFEE & MART — QR CODE DU CATALOGUE
 
 Destination encodée exactement :
-https://eloquent-scone-6e26ee.netlify.app/
+https://2five3coffemart.netlify.app/
 
 Le QR contient directement cette adresse, sans redirection intermédiaire ni service de QR dynamique.
 
@@ -21,3 +21,5 @@ VÉRIFICATION
 Le PNG et un rendu séparé du SVG ont été décodés avec ZXing-C++, en couleur et en niveaux de gris, de 2400 à 240 pixels de largeur. Chaque lecture correspond exactement à l’URL ci-dessus, barre oblique finale comprise.
 
 Le catalogue, son code et ses fonctions ne sont pas modifiés par ces fichiers.
+
+Ce QR remplace la version créée avant le changement du nom du site. Utiliser ces nouveaux fichiers pour les prochaines impressions.
