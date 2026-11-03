@@ -15,7 +15,7 @@ import { deflateRawSync } from "node:zlib";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const dist = join(root, "dist");
-const output = resolve(process.argv[2] || join(root, ".."));
+const output = resolve(process.argv[2] || join(root, "downloads"));
 const mimeTypes = {
   ".webp": "image/webp",
   ".png": "image/png",

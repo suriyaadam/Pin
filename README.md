@@ -2,6 +2,16 @@
 
 Catalogue de présentation responsive en français, réalisé avec React et Vite. Il présente les **27 boissons et les prix en FDJ fournis**, sans panier, paiement ni commande.
 
+## Télécharger et consulter le catalogue
+
+**[Télécharger le ZIP prêt à ouvrir](https://github.com/suriyaadam/Pin/raw/refs/heads/main/downloads/2five3-preview.zip)** · **[Télécharger uniquement le HTML autonome](https://github.com/suriyaadam/Pin/raw/refs/heads/main/downloads/2five3-preview.html)**
+
+1. Télécharger le ZIP ci-dessus et l’extraire (clic droit → « Extraire tout » sous Windows).
+2. Ouvrir **`2five3-preview.html`** dans Chrome, Edge, Firefox ou Safari. Les images, les polices et la vidéo sont intégrées : aucune installation ni adresse `localhost` n’est nécessaire.
+3. Pour tester depuis un téléphone sur le même réseau Wi-Fi, suivre `LIRE-MOI.txt` dans le ZIP.
+
+Les deux fichiers sont aussi visibles dans le dossier **[downloads/](downloads/)** du dépôt. Cette copie sert à valider le rendu ; elle ne déploie pas le site.
+
 ## Développement
 
 Node.js **20.19+ ou 22.12+** est requis (validé ici avec Node.js 24).
@@ -45,7 +55,7 @@ npm run build
 node scripts/build-preview.mjs
 ```
 
-Le script écrit `../2five3-preview.html` (images, polices et vidéo intégrées) et `../2five3-preview.zip`. Télécharger le HTML et l’ouvrir dans un navigateur récent permet de consulter le catalogue sans serveur. Cette copie ne remplace pas les sources React.
+Le script écrit `downloads/2five3-preview.html` (images, polices et vidéo intégrées) et `downloads/2five3-preview.zip`. Ces deux fichiers sont inclus dans le dépôt pour un téléchargement direct. Après une modification du catalogue, exécuter les deux commandes ci-dessus et enregistrer les aperçus régénérés. Cette copie ne remplace pas les sources React.
 
 Le ZIP fournit aussi le dossier `site/` et `LIRE-MOI.txt`. Pour une consultation depuis un smartphone, extraire le ZIP, ouvrir un terminal dans `site/`, puis lancer `python3 -m http.server 5173 --bind 0.0.0.0` (ou `python` sous Windows). Sur l’ordinateur : `http://localhost:5173`. Sur le téléphone connecté au même réseau Wi-Fi : `http://<adresse-IP-locale-de-l’ordinateur>:5173`.
 
@@ -107,4 +117,5 @@ public/video/        Versions optimisées de la vidéo fournie
 public/fonts/        Polices locales et licences
 tests/               Vérifications de la carte
 scripts/             Construction de l’aperçu autonome
+downloads/           Aperçus HTML et ZIP prêts à télécharger
 ```
