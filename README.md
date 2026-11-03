@@ -12,6 +12,12 @@ Catalogue de présentation responsive en français, réalisé avec React et Vite
 
 Les deux fichiers sont aussi visibles dans le dossier **[downloads/](downloads/)** du dépôt. Cette copie sert à valider le rendu ; elle ne déploie pas le site.
 
+## ZIP prêt pour Netlify
+
+**[Télécharger le ZIP Netlify](https://github.com/suriyaadam/Pin/raw/refs/heads/main/downloads/2five3-netlify.zip)**
+
+Décompresser cette archive, puis glisser le dossier extrait dans [Netlify Drop](https://app.netlify.com/drop). Le fichier `index.html` se trouve directement à la racine, avec les ressources compilées, les images corrigées, les polices et les vidéos. Aucune compilation locale n’est nécessaire pour utiliser cette archive. Le ZIP de consultation `2five3-preview.zip` reste destiné à l’aperçu hors ligne.
+
 ## Développement
 
 Node.js **20.19+ ou 22.12+** est requis (validé ici avec Node.js 24).
