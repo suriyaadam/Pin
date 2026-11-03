@@ -54,6 +54,7 @@ export const products = [
     imageAlt: "Blue Lagon Mojito bleu dans un gobelet transparent 2FIVE3.",
   }),
   product("strawberry-mojito", "mojitos", "Strawberry Mojito", 700, {
+    image: "/images/strawberry-mojito-v2.webp",
     imageAlt:
       "Strawberry Mojito rouge foncé dans un gobelet transparent 2FIVE3.",
   }),
@@ -67,13 +68,16 @@ export const products = [
     image: "/images/mojitos.webp",
   }),
   product("mango-mojito", "mojitos", "Mango Mojito", 700, {
+    image: "/images/mango-mojito-v2.webp",
     imageAlt: "Mango Mojito jaune dans un gobelet transparent 2FIVE3.",
   }),
   product("blueberry-mojito", "mojitos", "Blueberry Mojito", 700),
   product("watermelon-mojito", "mojitos", "Watermelon Mojito", 700, {
+    image: "/images/watermelon-mojito-v2.webp",
     imageAlt: "Watermelon Mojito rose pâle dans un gobelet transparent 2FIVE3.",
   }),
   product("mixed-mojito", "mojitos", "Mixed Mojito", 700, {
+    image: "/images/mixed-mojito-v2.webp",
     imageAlt:
       "Mixed Mojito dans un gobelet transparent 2FIVE3, avec des sirops rouge et vert visibles.",
   }),
