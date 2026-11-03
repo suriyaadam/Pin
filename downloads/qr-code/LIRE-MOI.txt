@@ -1,0 +1,23 @@
+2FIVE3 COFFEE & MART — QR CODE DU CATALOGUE
+
+Destination encodée exactement :
+https://eloquent-scone-6e26ee.netlify.app/
+
+Le QR contient directement cette adresse, sans redirection intermédiaire ni service de QR dynamique.
+
+FICHIERS
+- 2five3-catalogue-qr.png : 2400 × 2850 pixels, fond crème opaque, haute définition.
+- 2five3-catalogue-qr.svg : document vectoriel 80 × 95 mm, redimensionnable sans perte. Les textes sont convertis en tracés ; aucune police à installer.
+
+Mention sous le QR : « Scannez pour découvrir notre catalogue ».
+
+IMPRESSION
+- Utiliser de préférence le SVG pour une impression ou une mise en page.
+- À la taille nominale, le QR lui-même mesure environ 44 mm de large, entouré de six modules de marge claire. Pour une petite carte, conserver au moins 30 mm de largeur pour le code actif et ne pas couper la marge claire.
+- Conserver le vert foncé sur le fond crème opaque ; éviter les déformations, les reflets et les plis sur le QR.
+- Imprimer un exemplaire à la taille finale et effectuer un dernier test avec un smartphone avant un tirage important.
+
+VÉRIFICATION
+Le PNG et un rendu séparé du SVG ont été décodés avec ZXing-C++, en couleur et en niveaux de gris, de 2400 à 240 pixels de largeur. Chaque lecture correspond exactement à l’URL ci-dessus, barre oblique finale comprise.
+
+Le catalogue, son code et ses fonctions ne sont pas modifiés par ces fichiers.
